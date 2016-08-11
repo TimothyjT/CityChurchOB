@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="com.tubbs.citychurchob.fragments.EventsInfoFragment">
+
+    <ImageView
+        android:id="@+id/event_info_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/citychurch"/>
+
+
+    <TextView
+        android:id="@+id/event_info_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MissionOB"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/event_info_image"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/event_info_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:ellipsize="end"
+        android:layout_below="@id/event_info_title"
+        android:text="@string/test_event_desc"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
